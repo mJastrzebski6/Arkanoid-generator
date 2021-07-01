@@ -1,0 +1,62 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background-color: black;
+}
+
+.text{
+    color: white;
+    display: block;
+}
+
+#patternsSide{
+    float: left;
+    width: 500px;
+    text-align: center;
+    position: absolute;
+}
+
+#boardSide{
+    float: left;
+    width: 1120px;
+    text-align: center;
+    position: absolute;
+    left: 500px;
+}
+
+#patterns{
+    
+    width: 400px;
+    height: 120px;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+#board{
+    height: 1200px;
+    width: 1120px;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.block{
+    width: 80px;
+    height: 40px;
+}
+button {
+  width: 150px;
+  height: 60px;
+  border-radius: 0%;
+  margin-bottom: 10px;
+  font-size: 18px;
+  border: none;
+  cursor: pointer;
+  background-color: #1d2b53;
+  color: white;
+}
+h1{
+    margin: 5px 0 10px 0;
+}

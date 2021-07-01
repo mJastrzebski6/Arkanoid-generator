@@ -1,0 +1,38 @@
+#overlay {
+  width: 100vw;
+  height: 100vh;
+  position: absolute;
+  z-index: 2;
+  background-color: rgba(0, 0, 0, 0.4);
+  visibility: hidden;
+}
+
+#buttons-div {
+  width: 400px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+.overlay-button {
+  width: 100%;
+  background-color: lightgray;
+  height: 80px;
+  line-height: 80px;
+  cursor: pointer;
+  padding: 0 20px;
+  font-size: 20px;
+}
+.overlay-button:hover {
+  background-color: gray;
+}
+.overlay-button > div:first-child {
+  width: 80%;
+  float: left;
+}
+.overlay-button > div:last-child {
+  width: 20%;
+  float: left;
+}

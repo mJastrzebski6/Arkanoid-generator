@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="styles/environment.css" />
+    <link rel="stylesheet" type="text/css" href="styles/overlay.css" />
+    <title>Arkanoid</title>
+    <script type="module" src="javascripts/Objects.js"></script>
+  </head>
+  <body>
+    <div id="patternsSide">
+      <h1 class="text">Blocks</h1>
+      <canvas id="patterns"></canvas>
+    <br><br>
+      <a href="https://mjastrzebski6.github.io/Arkanoid-game/">
+        <button>Go to the game</button>
+      </a>
+    </div>
+    <div id="boardSide">
+      <h1 class="text">Board</h1>
+      <canvas id="board"></canvas>
+    </div>
+    <div id="overlay">
+      <div id="buttons-div">
+        <div class="overlay-button" id="undo-button">
+          <div>Undo</div>
+          <div>Ctrl+Z</div>
+        </div>
+        <div class="overlay-button" id="redo-button">
+          <div>Redo</div>
+          <div>Ctrl+Y</div>
+        </div>
+        <div class="overlay-button" id="delete-button">
+          <div>Delete</div>
+          <div>Del</div>
+        </div>
+        <div class="overlay-button" id="save-button">
+          <div>Save to file</div>
+          <div>Ctrl+S</div>
+        </div>
+        <div class="overlay-button" id="load-button">
+          <div>Load data from file</div>
+          <div>Ctrl+L</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
