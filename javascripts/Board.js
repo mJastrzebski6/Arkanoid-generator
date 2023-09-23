@@ -31,8 +31,11 @@ class Board {
     };
 
     this.canvas.addEventListener("mousemove", (event) => {
-      this.mouseX = event.pageX - 500;
-      this.mouseY = event.pageY - 22;
+
+      var bounds = this.canvas.getBoundingClientRect();
+
+      this.mouseX = event.pageX - bounds.left - scrollX;
+      this.mouseY = event.pageY - bounds.top - scrollY;
 
       for (let i = 0; i < 30; i++) {
         for (let j = 0; j < 14; j++) {
@@ -203,13 +206,7 @@ class Board {
         }
       }
     }
-    // this.ctx.fillStyle = "rgba(255, 255, 0, 0.5)";
-    // this.ctx.fillRect(
-    //   this.selectionXY[0],
-    //   this.selectionXY[1],
-    //   this.selectionXY[2] - this.selectionXY[0],
-    //   this.selectionXY[3] - this.selectionXY[1]
-    // );
+
 
     window.requestAnimationFrame(() => this.createPatternsCanvas());
   }
