@@ -29,8 +29,10 @@ class Patterns {
     };
 
     this.canvas.addEventListener("mousemove", (event) => {
-      this.mouseX = event.pageX - 50;
-      this.mouseY = event.pageY - 22;
+      var bounds = this.canvas.getBoundingClientRect();
+
+      this.mouseX = event.pageX - bounds.left - scrollX;
+      this.mouseY = event.pageY - bounds.top - scrollY;
 
       for (let i = 0; i < 3; i++) {
         for (let j = 0; j < 5; j++) {
